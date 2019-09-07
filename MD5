@@ -1,6 +1,7 @@
-914f636ba6e13795a98a3f5a5c219521 *DESCRIPTION
+0a21079ca9af4abbc38854a16d2c762e *DESCRIPTION
 edfc5a3db1d92b62e2b42139d6382aa9 *LICENSE
 8280342cabec2fc4502b641ab6399557 *NAMESPACE
+5b90e76c82e64776c10126e7f22a945a *NEWS.md
 734046c36bea261f5ae28d83894b19eb *R/adulto_equivalente.R
 78a3c63921755a1dc8c66e73d33196b2 *R/calculate_poverty.R
 ba7b4e300ac01d69b6ccc4d8926053dc *R/calculate_tabulates.R
@@ -8,7 +9,7 @@ ba7b4e300ac01d69b6ccc4d8926053dc *R/calculate_tabulates.R
 ccc572896cc95165a99d05626cb6a081 *R/diccionario_aglomerados.R
 a81c22d6a70d7eddf8fd35f4c4273e48 *R/diccionario_regiones.R
 23a4c62adc6d5b8a0a1da7d7e7db9913 *R/eph.R
-b3aa1610e5a4f27ffdcaf243336a5f46 *R/get_microdata.R
+50a4ec23d2215e39f7e100808cde0823 *R/get_microdata.R
 e6b1fcc70a3ff7bc1e3827c77b19bde7 *R/get_poverty_lines.R
 84fe81aaa4905121513cc0272afdddf1 *R/organize_labels.R
 fc7c7178c9a9060d1f7cf21ea54455a9 *R/organize_panels.R
@@ -17,7 +18,7 @@ fc7c7178c9a9060d1f7cf21ea54455a9 *R/organize_panels.R
 9134b006581a55afa68e9517d06bfbe7 *R/toybase_individual_2016_03.R
 4c3c95094f5565b942c5e65da2d6dc2e *R/toybase_individual_2016_04.R
 8d2487dbf45064f33b08e5a80830b68e *R/utils-pipe.R
-69342eebafe6f5a51ceabc7a6683ed69 *README.md
+c2abe46f80c872113fcb7d54802224a5 *README.md
 1463a29f4581e2b5e356ca999d48ad81 *data/adulto_equivalente.rda
 1afa625f1df503086142a700664cea62 *data/canastas_reg_example.rda
 4146459c9e635926df6dec74a36e7d22 *data/diccionario_aglomerados.rda

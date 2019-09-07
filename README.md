@@ -6,6 +6,8 @@ Status](https://api.travis-ci.org/rindec/eph.svg?branch=master)](https://travis-
 [![Coverage
 status](https://codecov.io/gh/rindec/eph/branch/master/graph/badge.svg)](https://codecov.io/gh/rindec/eph?branch=master)
 [![CRAN status](https://www.r-pkg.org/badges/version/eph)](https://cran.r-project.org/package=eph)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/eph?color=blue)](https://cran.r-project.org/package=eph)
+[![](http://cranlogs.r-pkg.org/badges/last-month/eph?color=blue)](https://cran.r-project.org/package=eph)
   <!-- badges: end -->
 
 
@@ -33,9 +35,18 @@ Sus principales funciones son:
 
 ## Instalación
 
-Desde Rstudio 
+
+Para la versión estable
+
+```r
+
+install.packages('eph')
 
 ```
+
+Para la versión en desarrollo. 
+
+```r
 
 # install.packages('devtools') si no tiene instalado devtools
 
@@ -46,7 +57,7 @@ devtools::install_github("rindec/eph")
 ## Modo de uso.
 
 ### Descarga de microdatos -->
-```
+```r
 
 # Cargo la libreria
 library(eph )
@@ -61,7 +72,7 @@ base_2016t3_hog <- get_microdata(year = 2016, trimester = 3, type = 'hogar')
 
 ### Tabulados uni / bivariados con ponderacion, totales parciales y porcentajes -->
 
-```
+```r
 
 # Cargo la libreria
 library(eph)
@@ -80,7 +91,7 @@ calculate_tabulates(base, x = "ESTADO", y = "CH04", add.totals = "row", add.perc
 ```
 
 ### Etiquetas [labels] para base de microdatos -->
-```
+```r
 
 # Cargo la librería
 library(eph)
