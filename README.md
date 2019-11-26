@@ -8,6 +8,7 @@ status](https://codecov.io/gh/rindec/eph/branch/master/graph/badge.svg)](https:/
 [![CRAN status](https://www.r-pkg.org/badges/version/eph)](https://cran.r-project.org/package=eph)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/eph?color=blue)](https://cran.r-project.org/package=eph)
 [![](http://cranlogs.r-pkg.org/badges/last-month/eph?color=blue)](https://cran.r-project.org/package=eph)
+[![DOI](https://zenodo.org/badge/142294444.svg)](https://zenodo.org/badge/latestdoi/142294444)
   <!-- badges: end -->
 
 
@@ -50,7 +51,7 @@ Para la versión en desarrollo.
 
 # install.packages('devtools') si no tiene instalado devtools
 
-devtools::install_github("rindec/eph")
+devtools::install_github("holatam/eph")
 
 ```
 

@@ -40,6 +40,24 @@ if(getRversion() >= "2.15.1") utils::globalVariables(c(".",
                                                        "periodo",
                                                        "situacion",
                                                        "put_labels_eph",
-                                                       "sin_controles"))
+                                                       "sin_controles",
+                                                       "microdata",
+                                                       "error",
+                                                       "filter_col",
+                                                       "error_message",
+                                                       ".data",
+                                                       "Periodo",
+                                                       "vars",
+                                                       "CNO",
+                                                       "digit",
+                                                       "value",
+                                                       "label",
+                                                       "PP04D_COD",
+                                                       "CLASIF_CNO",
+                                                       "DIGIT12",
+                                                       "DIGIT3",
+                                                       "DIGIT4",
+                                                       "DIGIT5"))
+
 
 
