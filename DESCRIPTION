@@ -1,7 +1,7 @@
 Package: eph
 Title: Argentina's Permanent Household Survey Data and Manipulation
         Utilities
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
     person("Diego", "Kozlowski", email = "diegokoz92@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0000-0002-5396-3471")),
     person("Pablo", "Tiscornia", email = "pablotisco@gmail.com", role = "aut"),
@@ -16,21 +16,22 @@ Description: Tools to download and manipulate the Permanent Household Survey fro
     adds the official labels to the data. The implemented methods are based on INDEC (2016) <http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf>.
     As this package works with the argentinian Permanent Household Survey and its main audience is from this country,
     the documentation was written in Spanish.
-BugReports: https://github.com/rindec/eph/issues
+BugReports: https://github.com/holatam/eph/issues
 Imports: dplyr, expss, assertthat, purrr, tibble, stringr, magrittr,
         glue, readxl, janitor, questionr, tidyr, readr, utils, curl,
-        attempt, zoo, tidyverse
+        attempt, zoo, tidyverse, leaflet, sf, htmltools, rlang, rvest,
+        xml2, stats
 Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
 URL: https://github.com/holatam/eph
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Suggests: testthat, covr, knitr, rmarkdown, ggplot2
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-11-26 20:00:54 UTC; diego
+Packaged: 2020-03-08 15:51:19 UTC; diego.kozlowski
 Author: Diego Kozlowski [aut, cre] (<https://orcid.org/0000-0002-5396-3471>),
   Pablo Tiscornia [aut],
   Guido Weksler [aut],
@@ -38,4 +39,4 @@ Author: Diego Kozlowski [aut, cre] (<https://orcid.org/0000-0002-5396-3471>),
   German Rosati [aut] (<https://orcid.org/0000-0002-9775-0435>)
 Maintainer: Diego Kozlowski <diegokoz92@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-11-26 22:40:02 UTC
+Date/Publication: 2020-03-08 16:10:02 UTC
