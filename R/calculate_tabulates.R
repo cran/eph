@@ -1,6 +1,6 @@
-#'Tabulado con ponderación
+#'Tabulado con ponderacion
 #'@description
-#'Función para crear tabulados uni o bivariados con ponderacion, totales parciales y porcentajes.
+#'Funcion para crear tabulados uni o bivariados con ponderacion, totales parciales y porcentajes.
 #'@param base Dataframe
 #'@param x string con el nombre de la variable a tabular
 #'@param y otro string (opcional) con el nombre de una segunda variable, para una tabla de doble entrada. Tiene que ser de igual largo que x
@@ -17,23 +17,27 @@
 #'
 #'### tabla simple ###
 #'
-#'calculate_tabulates(base = toybase_individual_2016_04,x = 'REGION', y = 'CH04',
-#'             weights = 'PONDERA')
+#'calculate_tabulates(base = toybase_individual_2016_04,
+#'                     x = 'REGION', y = 'CH04',
+#'                     weights = 'PONDERA')
 #'
 #'### para ver los totales por fila ###
 #'
-#'calculate_tabulates(base = toybase_individual_2016_04,x = 'REGION', y = 'CH04',
-#'             weights = 'PONDERA', add.totals = 'row')
+#'calculate_tabulates(base = toybase_individual_2016_04,
+#'                     x = 'REGION', y = 'CH04',
+#'                     weights = 'PONDERA', add.totals = 'row')
 #'
 #'### para ver los totales por columna ###
 #'
-#'calculate_tabulates(base = toybase_individual_2016_04,x = 'REGION', y = 'CH04',
-#'             weights = 'PONDERA', add.totals = 'col')
+#'calculate_tabulates(base = toybase_individual_2016_04,
+#'                     x = 'REGION', y = 'CH04',
+#'                     weights = 'PONDERA', add.totals = 'col')
 #'
 #'### para ver porcentajes por fila ###
 #'
-#'calculate_tabulates(base = toybase_individual_2016_04,x = 'REGION', y = 'CH04',
-#'             weights = 'PONDERA', add.percentage ='row')
+#'calculate_tabulates(base = toybase_individual_2016_04,
+#'                     x = 'REGION', y = 'CH04',
+#'                     weights = 'PONDERA', add.percentage ='row')
 #'
 #'@export
 

@@ -4,21 +4,21 @@
 #'@param year un integer o vector de integers a partir de 2003
 #'@param trimester un integer o vector de integers con el numero de trimester: 1,2,3,4, para la EPH continua
 #'@param wave un integer o vector de integers con el numero de onda, 1 o 2, para la EPH puntual
-#'@param type un character o vector de characters con el tipo de base a descargar: 'individual' ; 'hogar', default individual
+#'@param type un character o vector de characters con el tipo de base a descargar: 'individual'; 'hogar', default individual
 #'@param vars un vector de characters. variables a seleccionar. Default='all' trae todas las variables
 #'@details
 #'Las bases de la EPH puntual utilizan el parametro wave, para referirse a las ondas.
-#'Su alcance es entre la onda 1 de 1996 y a onda 1 de 2003.
+#'Su alcance es entre la onda 1 de 1996 y la onda 1 de 2003.
 #'
-#'Las bases de la EPH continua utiliza el parametro trimester, para referirse a los trimestres.
+#'Las bases de la EPH continua utilizan el parametro trimester, para referirse a los trimestres.
 #'Su alcance es entre tercer trimestre de 2003 a la actualidad
 #'disclaimer: El script no es un producto oficial de INDEC.
 #'
 #'@return
 #'
-#'En caso de una única base devuevle un dataframe.
-#'En caso de una consulta múltiple devuelve un dataframe anidado, con
-#'la información de cada consulta y una columna `microdata` con la base
+#'En caso de una unica base devuevle un dataframe.
+#'En caso de una consulta multiple devuelve un dataframe anidado, con
+#'la informacion de cada consulta y una columna `microdata` con la base
 #'correspondiente
 #'
 #'@examples

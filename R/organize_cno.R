@@ -1,37 +1,39 @@
 #'Clasificador de Ocupaciones
 #'@description
-#'Función para clasificar las ocupaciones según las 4 dimensiones del Clasificador Nacional de Ocupaciones
+#'Funcion para clasificar las ocupaciones segun las 4 dimensiones del Clasificador Nacional de Ocupaciones
 #' (CNO 2001)
-#'@param base Base individual de uno o más períodos
-#'@details #'disclaimer: El script no es un producto oficial de INDEC.
+#'@param base Base individual de uno o mas periodos
+#'@details  Disclaimer: El script no es un producto oficial de INDEC.
+#'
+#'Importante: El usuario debe garantizarse que el clasificador CNO 2001 es compatible con la base que esta utilizando
 #'
 #'@examples
 #'
-#'#'
+#'
 #'bases <- dplyr::bind_rows(toybase_individual_2016_03,toybase_individual_2016_04)
-#'bases_clasif <- organize_ocupations(base = bases)
+#'bases_clasif <- organize_cno(base = bases)
 #'
 #'@export
-organize_ocupations <- function(base){
+organize_cno <- function(base){
 
-##Estos 4 df quizás podrían ir como RDA guardados en vez de CNO
-##que, si bien condensa toda la info,  está en un formato que mucho no ayuda
-##La otra opción es definir las categorías a mano con case_when
+##Estos 4 df quizas podrian ir como RDA guardados en vez de CNO
+##que, si bien condensa toda la info,  esta en un formato que mucho no ayuda
+##La otra opcion es definir las categorias a mano con case_when
 
-  categoria <- CNO %>%
+  caracter <- CNO %>%
     dplyr::filter(digit==12) %>%
     dplyr::select(value,CATEGORIA = label) %>%
     dplyr::add_row(value= "99", CATEGORIA = 'Ns.Nc')
 
-  tecnologia <- CNO %>%
-    dplyr::filter(digit==3) %>%
-    dplyr::select(value,TECNOLOGIA = label) %>%
-    dplyr::add_row(value= "9", TECNOLOGIA = 'Ns.Nc')
-
   jerarquia <- CNO %>%
-    dplyr::filter(digit==4) %>%
+    dplyr::filter(digit==3) %>%
     dplyr::select(value,JERARQUIA = label) %>%
     dplyr::add_row(value= "9", JERARQUIA = 'Ns.Nc')
+
+  tecnologia <- CNO %>%
+    dplyr::filter(digit==4) %>%
+    dplyr::select(value,TECNOLOGIA = label) %>%
+    dplyr::add_row(value= "9", TECNOLOGIA = 'Ns.Nc')
 
   calificacion <- CNO %>%
     dplyr::filter(digit==5) %>%
@@ -45,11 +47,11 @@ organize_ocupations <- function(base){
                     DIGIT3 = substr(CLASIF_CNO,3,3),
                     DIGIT4 = substr(CLASIF_CNO,4,4),
                     DIGIT5 = substr(CLASIF_CNO,5,5)) %>%
-      dplyr::left_join(.,categoria,
+      dplyr::left_join(.,caracter,
                        by = c("DIGIT12" = "value")) %>%
-      dplyr::left_join(.,tecnologia,
-                       by = c("DIGIT3" = "value")) %>%
       dplyr::left_join(.,jerarquia,
+                       by = c("DIGIT3" = "value")) %>%
+      dplyr::left_join(.,tecnologia,
                        by = c("DIGIT4" = "value")) %>%
       dplyr::left_join(.,calificacion,
                        by = c("DIGIT5" = "value")) %>%

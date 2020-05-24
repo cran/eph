@@ -3,17 +3,19 @@
 \docType{data}
 \name{canastas_reg_example}
 \alias{canastas_reg_example}
-\title{Canastas Básicas Alimentarias y Cavnastas Básicas Totales según región y trimestre}
-\format{A data frame with 12 rows and 5 variables
+\title{Canastas Basicas Alimentarias y Canastas Basicas Totales segun region y trimestre}
+\format{
+A data frame with 12 rows and 5 variables
 
 \describe{
-\item{region}{Nombre de región}
+\item{region}{Nombre de region}
 \item{periodo}{Año.trimestre}
 \item{CBA}{canasta basica alimentaria}
 \item{CBT}{inversa del coeficiente de engels}
-\item{codigo}{código de región}
+\item{codigo}{codigo de region}
 ...
-}}
+}
+}
 \usage{
 canastas_reg_example
 }
