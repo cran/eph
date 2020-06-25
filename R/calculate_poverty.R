@@ -3,7 +3,7 @@
 #'Funcion para calcular la pobreza e indigencia siguiendo la metodologia de linea.
 #'@param base Base individual de uno o mas periodos
 #'@param basket canasta basica alimentaria y total, con la estructura de la canasta de ejemplo (ver \code{\link{canastas_reg_example}})
-#'@param print_summary TRUE/FALSE, opcion para imprimir las tasas de pobreza e indigencia
+#'@param print_summary default = TRUE. Opcion para imprimir las tasas de pobreza e indigencia (proporcion de individuos)
 #'@details disclaimer: El script no es un producto oficial de INDEC.
 #'
 #'@examples
@@ -32,7 +32,7 @@ calculate_poverty <- function(base,basket,print_summary=TRUE ){
              situacion = dplyr::case_when(ITF<CBA_hogar            ~ 'indigente',
                                    ITF>=CBA_hogar & ITF<CBT_hogar ~ 'pobre',
                                    ITF>=CBT_hogar           ~ 'no_pobre'),
-             situacion = dplyr::case_when(PONDIH==0 ~ "NA", #excluyo los casos que no tienen respuesta en ITF
+             situacion = dplyr::case_when(PONDIH==0 ~ NA_character_, #excluyo los casos que no tienen respuesta en ITF
                                           TRUE ~ situacion)) %>%
       dplyr::select(-adequi,-periodo,-CBA, -CBT)
 
