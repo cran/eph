@@ -1,17 +1,16 @@
-# eph
+
+# eph <a><img src='man/figures/logo.png' align="right" height="250" /></a>
 
 <!-- badges: start -->
-[![Travis-CI Build
-Status](https://api.travis-ci.org/holatam/eph.svg?branch=master)](https://travis-ci.org/holatam/eph)
+[![R build status](https://github.com/holatam/eph/workflows/R-CMD-check/badge.svg)](https://github.com/holatam/eph/actions)
 [![Coverage
-status](https://codecov.io/gh/holatam/eph/branch/master/graph/badge.svg)](https://codecov.io/gh/holatam/eph?branch=master)
+status](https://codecov.io/gh/holatam/eph/branch/master/graph/badge.svg)](https://app.codecov.io/gh/holatam/eph?branch=master)
 [![CRAN status](https://www.r-pkg.org/badges/version/eph)](https://cran.r-project.org/package=eph)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/eph?color=blue)](https://cran.r-project.org/package=eph)
 [![](http://cranlogs.r-pkg.org/badges/last-month/eph?color=blue)](https://cran.r-project.org/package=eph)
 [![DOI](https://zenodo.org/badge/142294444.svg)](https://zenodo.org/badge/latestdoi/142294444)
-  <!-- badges: end -->
 
-
+<!-- badges: end -->
 
 # Caja de Herramientas para el procesamiento de la Encuesta Permanente de Hogares
 
@@ -105,4 +104,4 @@ base_individual <- get_microdata(year = 2018:2019,   # especifco el año
 
 Este paquete se propone incorporar cualquier función de propósitos generales que utilice como base los datos de la Encuesta Permanente de Hogares. Todos los aportes en este sentido son bienvenidos.
 
-Si trabajas con la EPH y querés agregar tu función, te recomendamos que leas el siguiente [issue](https://github.com/pablinte/eph/issues/5#issue-407890587) con consejos de como colaborar
+Si trabajas con la EPH y querés agregar tu función, te recomendamos que leas el siguiente [issue](https://github.com/holatam/eph/issues/5#issue-407890587) con consejos de como colaborar
