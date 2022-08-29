@@ -1,7 +1,7 @@
 Package: eph
 Title: Argentina's Permanent Household Survey Data and Manipulation
         Utilities
-Version: 0.5.0
+Version: 0.5.1
 Authors@R: c(
     person("Diego", "Kozlowski", email = "diegokoz92@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0002-5396-3471")),
     person("Pablo", "Tiscornia", email = "pablotisco@gmail.com", role = "aut"),
@@ -32,7 +32,7 @@ RoxygenNote: 7.1.2
 Suggests: testthat, lubridate, covr, knitr, rmarkdown, ggplot2
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-08-11 16:48:45 UTC; carol
+Packaged: 2022-08-22 15:05:53 UTC; carol
 Author: Diego Kozlowski [aut] (<https://orcid.org/0000-0002-5396-3471>),
   Pablo Tiscornia [aut],
   Guido Weksler [aut],
@@ -42,4 +42,4 @@ Author: Diego Kozlowski [aut] (<https://orcid.org/0000-0002-5396-3471>),
   Carolina Pradier [aut, cre]
 Maintainer: Carolina Pradier <carolinapradier@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-08-11 22:50:06 UTC
+Date/Publication: 2022-08-29 08:50:05 UTC
