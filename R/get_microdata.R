@@ -16,13 +16,6 @@
 #'Su alcance es entre tercer trimestre de 2003 a la actualidad
 #'disclaimer: El script no es un producto oficial de INDEC.
 #'
-#'@return
-#'
-#'En caso de una unica base devuevle un dataframe.
-#'En caso de una consulta multiple devuelve un dataframe anidado, con
-#'la informacion de cada consulta y una columna `microdata` con la base
-#'correspondiente
-#'
 #'@examples
 #'
 #'base_individual <- get_microdata(year = 2018:2019,

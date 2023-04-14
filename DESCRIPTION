@@ -1,7 +1,7 @@
 Package: eph
 Title: Argentina's Permanent Household Survey Data and Manipulation
         Utilities
-Version: 0.5.1
+Version: 0.6.0
 Authors@R: c(
     person("Diego", "Kozlowski", email = "diegokoz92@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0002-5396-3471")),
     person("Pablo", "Tiscornia", email = "pablotisco@gmail.com", role = "aut"),
@@ -20,19 +20,20 @@ Description: Tools to download and manipulate the Permanent Household Survey fro
     the documentation was written in Spanish.
 BugReports: https://github.com/holatam/eph/issues
 Imports: dplyr, expss, assertthat, purrr, tibble, stringr, magrittr,
-        glue, readxl, janitor, tidyr, readr, utils, curl, attempt, zoo,
-        tidyverse, leaflet, htmltools, rlang, rvest, xml2, stats
+        glue, readxl, janitor, tidyr, utils, curl, attempt, zoo,
+        leaflet, htmltools, rlang, rvest, xml2, stats, cli
 Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
 URL: https://github.com/holatam/eph
 LazyData: true
-RoxygenNote: 7.1.2
-Suggests: testthat, lubridate, covr, knitr, rmarkdown, ggplot2
+RoxygenNote: 7.2.3
+Suggests: testthat, lubridate, covr, knitr, rmarkdown, ggplot2, readr,
+        forcats
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-08-22 15:05:53 UTC; carol
+Packaged: 2023-04-14 20:38:11 UTC; carol
 Author: Diego Kozlowski [aut] (<https://orcid.org/0000-0002-5396-3471>),
   Pablo Tiscornia [aut],
   Guido Weksler [aut],
@@ -42,4 +43,4 @@ Author: Diego Kozlowski [aut] (<https://orcid.org/0000-0002-5396-3471>),
   Carolina Pradier [aut, cre]
 Maintainer: Carolina Pradier <carolinapradier@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-08-29 08:50:05 UTC
+Date/Publication: 2023-04-14 21:00:02 UTC
