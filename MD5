@@ -1,7 +1,7 @@
-2f66223cf8398094a1358411831ace53 *DESCRIPTION
+461c2e2880c3d2a0872f3d2479981aa7 *DESCRIPTION
 fded911f1f7094bf44ac3b303664baa1 *LICENSE
 7dde16eed2596730959cc0e0635178ae *NAMESPACE
-a0dd4ee31eb5192fb1d35c449528fc9c *NEWS.md
+4a3126276d8462b614179e58daf1b014 *NEWS.md
 8a844190dcf0c13a6afd4a984a396c5b *R/CNO.R
 3e8d283f186410665e8279dfdccb36e1 *R/adulto_equivalente.R
 bf4683f3af6f7e6b4403b53582ce16e6 *R/caes.R
@@ -17,7 +17,7 @@ b9696fe8e7da54826509cc33d601443d *R/diccionario_regiones.R
 cb106762405f76d8056387831ac99b69 *R/get_microdata.R
 fa9719cccf34a18c1823412e0a535f65 *R/get_microdata_internal.R
 46b6b7cbd7566455d8dfa724a7f652e0 *R/get_poverty_lines.R
-355f5cc55b6b5dce4624ffee407fe141 *R/is_in_github.R
+95131ecb7bf23614af6adeae8ce86d89 *R/is_in_github.R
 31d0bc532bd264dbcf39276e0bed456d *R/map_agglomerates.R
 3ac7747b5fbfa054722e15ea560af1a8 *R/organize_caes.R
 4f218ee445ec22ed7210a993bc2ba4e0 *R/organize_cno.R
@@ -44,10 +44,10 @@ dd8ee9a6575bd422cff821130653cb2c *data/toybase_individual_2016_03.rda
 2454426a354fcbc9d599f78db28e601f *inst/CITATION
 d6f9c13f27dfebf24431a32cf0e0a119 *inst/doc/eph.R
 f9e5967f6743d5a444ed933d8c58f4f6 *inst/doc/eph.Rmd
-978844043c01904bc8ef92be6f0c6b38 *inst/doc/eph.html
+efc14908142c66ea68dd467039f351ed *inst/doc/eph.html
 acab5fe355bbcd68cc4443b73aa14fac *inst/doc/estimacion_pobreza.R
 9e9d2334eeaecb58124eaac4b6d7c8bd *inst/doc/estimacion_pobreza.Rmd
-212aaae70aa576dd0a0f7858a9065d93 *inst/doc/estimacion_pobreza.html
+48ebdac5e15140fb10b46913e844a3d0 *inst/doc/estimacion_pobreza.html
 868c1bdc14a0e2b1173621dccf6bc6b1 *man/CNO.Rd
 2fd3af3ee3ed6cf0e3e5cfe23f395424 *man/adulto_equivalente.Rd
 04be14876e6ae75dac87f29bf73279e1 *man/caes.Rd
