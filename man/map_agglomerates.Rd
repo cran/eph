@@ -23,14 +23,19 @@ map_agglomerates(
 
 \item{palette}{Paleta de colores a utilizar, incluye "viridis", "magma", "inferno", or "plasma". Para mas opciones, ver \link[leaflet]{colorNumeric}}
 }
+\value{
+Devuelve un mapa de indicadores por aglomerado
+}
 \description{
 Mapa de indicadores por aglomerado
 }
 \examples{
 
 toybase_individual_2016_04 \%>\%
- dplyr::group_by(AGLOMERADO) \%>\%
- dplyr::summarise(tasa_actividad = sum(PONDERA[ESTADO==1])/sum(PONDERA)) \%>\%
- map_agglomerates(agglomerates = AGLOMERADO,
-                   indicator = tasa_actividad)
+  dplyr::group_by(AGLOMERADO) \%>\%
+  dplyr::summarise(tasa_actividad = sum(PONDERA[ESTADO == 1]) / sum(PONDERA)) \%>\%
+  map_agglomerates(
+    agglomerates = AGLOMERADO,
+    indicator = tasa_actividad
+  )
 }

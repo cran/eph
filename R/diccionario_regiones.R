@@ -1,10 +1,10 @@
-#'Diccionario de regiones segun diseño de registro de la EPH
+#' Diccionario de regiones segun diseno de registro de la EPH
 #'
-#' @format  A data frame with 6 rows and 2 variables
+#' @format  Un data frame con 6 filas y 2 variables
 #'
-#'\describe{
+#' \describe{
 #' \item{codigo}{Codigo de region}
-#' \item{region}{Nombre de región}
+#' \item{region}{Nombre de region}
 #'
-#'}
+#' }
 "diccionario_regiones"

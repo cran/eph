@@ -11,7 +11,6 @@ calculate_tabulates(
   weights = NULL,
   affix_sign = FALSE,
   digits = 1,
-  addNA = FALSE,
   add.totals = "none",
   add.percentage = "none"
 )
@@ -29,11 +28,12 @@ calculate_tabulates(
 
 \item{digits}{numero de digitos significativos}
 
-\item{addNA}{de haber, cuenta valores NA}
-
 \item{add.totals}{toma los valores c('none','row','col','both'), para agregar totales por fila, columna o ambos}
 
 \item{add.percentage}{toma los valores c('none','row','col'), para agregar porcentajes por fila y columna}
+}
+\value{
+Devuelve un tabulado uni o bivariado con ponderacion, totales parciales y porcentajes.
 }
 \description{
 Funcion para crear tabulados uni o bivariados con ponderacion, totales parciales y porcentajes.
@@ -41,28 +41,36 @@ Funcion para crear tabulados uni o bivariados con ponderacion, totales parciales
 \examples{
 
 
-### tabla simple ###
+### Tabla simple ###
 
-calculate_tabulates(base = toybase_individual_2016_04,
-                    x = 'REGION', y = 'CH04',
-                    weights = 'PONDERA')
+calculate_tabulates(
+  base = toybase_individual_2016_04,
+  x = "REGION", y = "CH04",
+  weights = "PONDERA"
+)
 
-### para ver los totales por fila ###
+### Totales por fila ###
 
-calculate_tabulates(base = toybase_individual_2016_04,
-                    x = 'REGION', y = 'CH04',
-                    weights = 'PONDERA', add.totals = 'row')
+calculate_tabulates(
+  base = toybase_individual_2016_04,
+  x = "REGION", y = "CH04",
+  weights = "PONDERA", add.totals = "row"
+)
 
-### para ver los totales por columna ###
+### Totales por columna ###
 
-calculate_tabulates(base = toybase_individual_2016_04,
-                    x = 'REGION', y = 'CH04',
-                    weights = 'PONDERA', add.totals = 'col')
+calculate_tabulates(
+  base = toybase_individual_2016_04,
+  x = "REGION", y = "CH04",
+  weights = "PONDERA", add.totals = "col"
+)
 
-### para ver porcentajes por fila ###
+### Porcentajes por fila ###
 
-calculate_tabulates(base = toybase_individual_2016_04,
-                    x = 'REGION', y = 'CH04',
-                    weights = 'PONDERA', add.percentage ='row')
+calculate_tabulates(
+  base = toybase_individual_2016_04,
+  x = "REGION", y = "CH04",
+  weights = "PONDERA", add.percentage = "row"
+)
 
 }

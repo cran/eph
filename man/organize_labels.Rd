@@ -11,12 +11,15 @@ organize_labels(df, type = "individual")
 
 \item{type}{(string) aclaracion sobre si la base a etiquetar es de tipo 'individual' u 'hogar'}
 }
+\value{
+Devuelve la base con sus variables etiquetadas de acuerdo con el disenio de registro de la EPH (no renombra los valores o nombres de las columnas, agrega etiquetas con esta información)
+}
 \description{
 Funcion para etiquetar las bases de la Encuesta Permanente de Hogares.
 }
 \details{
-Disclaimer: El script no es un producto oficial de INDEC.
+disclaimer: El script no es un producto oficial de INDEC.
 }
 \examples{
-df <- organize_labels(toybase_individual_2016_04, type='individual')
+df <- organize_labels(toybase_individual_2016_04, type = "individual")
 }

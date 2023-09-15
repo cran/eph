@@ -9,19 +9,22 @@ organize_cno(base)
 \arguments{
 \item{base}{Base individual de uno o mas periodos}
 }
+\value{
+Devuelve la base con 4 columnas nuevas (que indican la informacion correspondiente al Clasificador Nacional de Ocupaciones)
+}
 \description{
 Funcion para clasificar las ocupaciones segun las 4 dimensiones del Clasificador Nacional de Ocupaciones
 (CNO 2001)
 }
 \details{
-Disclaimer: El script no es un producto oficial de INDEC.
+Importante: Verificar que el clasificador CNO 2001 sea compatible con la base que estes utilizando.
 
-Importante: El usuario debe garantizarse que el clasificador CNO 2001 es compatible con la base que esta utilizando
+disclaimer: El script no es un producto oficial de INDEC.
 }
 \examples{
 
 
-bases <- dplyr::bind_rows(toybase_individual_2016_03,toybase_individual_2016_04)
-bases_clasif <- organize_cno(base = bases)
+bases <- dplyr::bind_rows(toybase_individual_2016_03, toybase_individual_2016_04)
+bases_clasificadas <- organize_cno(base = bases)
 
 }

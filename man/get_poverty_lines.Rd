@@ -11,14 +11,18 @@ get_poverty_lines(regional = FALSE)
 que se utilizan para el calculo de pobreza. Si es FALSE, descarga la serie de GBA
 provista por indec en https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-43-149}
 }
+\value{
+Devuelve una tabla con la CBA y CBT a partir de abril 2016
+}
 \description{
 Funcion que descarga la CBA y CBT a partir de abril 2016
 }
 \details{
-Disclaimer: El script no es un producto oficial de INDEC.
+disclaimer: El script no es un producto oficial de INDEC.
 }
 \examples{
 
 canasta <- get_poverty_lines(regional = TRUE)
+canasta
 
 }

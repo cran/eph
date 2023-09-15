@@ -2,7 +2,7 @@
 % Please edit documentation in R/organize_caes.R
 \name{organize_caes}
 \alias{organize_caes}
-\title{organize_caes}
+\title{Clasificador de Actividades}
 \usage{
 organize_caes(base)
 }
@@ -10,7 +10,7 @@ organize_caes(base)
 \item{base}{Base individual de uno o mas periodos}
 }
 \value{
-Devuelve la base con 8 columnas nuevas (ver \code{\link{caes}})
+Devuelve la base con 8 columnas nuevas (ver `caes`)
 }
 \description{
 Funcion para clasificar las actividades economicas segun el
@@ -21,10 +21,10 @@ Funcion para clasificar las actividades economicas segun el
 \details{
 disclaimer: El script no es un producto oficial de INDEC.
 
-El usuario debe contemplar los cambios en la codificacion y categorias de las distintas versiones del clasificador CAES, para la elaboracion de series de largo plazo.
+No olvides contemplar los cambios en la codificacion y categorias de las distintas versiones del clasificador CAES para la elaboracion de series de largo plazo.
 }
 \examples{
-bases <- dplyr::bind_rows(toybase_individual_2016_03,toybase_individual_2016_04)
-organize_caes(base = bases)
+bases <- dplyr::bind_rows(toybase_individual_2016_03, toybase_individual_2016_04)
+bases_clasificadas <- organize_caes(base = bases)
 
 }

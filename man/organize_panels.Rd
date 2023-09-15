@@ -18,15 +18,17 @@ Devuelve el pool de datos de panel
 }
 \description{
 Permite armar un pool de datos en panel de la EPH continua a partir
-de especificar una serie consecutiva de bases, variables y el largo de la ventana -window- de observación
+de especificar una serie consecutiva de bases, variables y el largo de la ventana -window- de observacion
 }
 \details{
-Disclaimer: El script no es un producto oficial de INDEC.
+disclaimer: El script no es un producto oficial de INDEC.
 }
 \examples{
 
-lista_bases <- list(toybase_individual_2016_03,toybase_individual_2016_04)
-pool_trimestral <- organize_panels(bases = lista_bases,
-                    variables =c("P21","ESTADO"),
-                    window = "trimestral")
+lista_bases <- list(toybase_individual_2016_03, toybase_individual_2016_04)
+pool_trimestral <- organize_panels(
+  bases = lista_bases,
+  variables = c("P21", "ESTADO"),
+  window = "trimestral"
+)
 }
