@@ -1,7 +1,7 @@
 Package: eph
 Title: Argentina's Permanent Household Survey Data and Manipulation
         Utilities
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("Carolina", "Pradier", email = "carolinapradier@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0009-0007-5058-6352")),
     person("Diego", "Kozlowski", email = "diegokoz92@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0002-5396-3471")),
@@ -19,7 +19,7 @@ Description: Tools to download and manipulate the Permanent Household Survey fro
     adds the official labels to the data. The implemented methods are based on INDEC (2016) <http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf>.
     As this package works with the argentinian Permanent Household Survey and its main audience is from this country,
     the documentation was written in Spanish.
-BugReports: https://github.com/holatam/eph/issues
+BugReports: https://github.com/ropensci/eph/issues
 Imports: dplyr, expss, purrr, tibble, stringr, readxl, tidyr, utils,
         attempt, zoo, leaflet, htmltools, rlang, stats, cli, httr,
         curl, tidyselect
@@ -27,14 +27,14 @@ Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
-URL: https://github.com/holatam/eph
+URL: https://github.com/ropensci/eph
 LazyData: true
 RoxygenNote: 7.2.3
 Suggests: testthat, lubridate, knitr, rmarkdown, ggplot2, readr,
         forcats, httptest
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2023-09-15 14:21:17 UTC; carolinapradier
+Packaged: 2024-06-19 16:13:21 UTC; carolinapradier
 Author: Carolina Pradier [aut, cre] (<https://orcid.org/0009-0007-5058-6352>),
   Diego Kozlowski [aut] (<https://orcid.org/0000-0002-5396-3471>),
   Pablo Tiscornia [aut],
@@ -44,4 +44,4 @@ Author: Carolina Pradier [aut, cre] (<https://orcid.org/0009-0007-5058-6352>),
   Juan Gabriel Juara [ctb]
 Maintainer: Carolina Pradier <carolinapradier@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-09-15 14:42:40 UTC
+Date/Publication: 2024-06-19 16:30:02 UTC

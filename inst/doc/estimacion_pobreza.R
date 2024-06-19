@@ -1,4 +1,4 @@
-## ---- echo = FALSE------------------------------------------------------------
+## ----echo = FALSE-------------------------------------------------------------
 LOCAL <- TRUE
 # identical(Sys.getenv("LOCAL"), "TRUE")
 knitr::opts_chunk$set(
@@ -19,7 +19,7 @@ library(lubridate)
 library(ggplot2)
 library(forcats)
 
-## ---- eval=LOCAL--------------------------------------------------------------
+## ----eval=LOCAL---------------------------------------------------------------
 canastas_regionales <- get_poverty_lines(regional = TRUE)
 bases <- get_microdata(
   year = 2016:2019,
@@ -29,19 +29,19 @@ bases <- get_microdata(
   # ,destfile = 'bases_eph.rds'
 )
 
-## ---- eval=LOCAL--------------------------------------------------------------
+## ----eval=LOCAL---------------------------------------------------------------
 # bases <- bases %>% unnest(cols = c(microdata))
 bases_pobreza <- calculate_poverty(bases, canastas_regionales, print_summary = TRUE)
 bases_pobreza
 
-## ---- eval=LOCAL--------------------------------------------------------------
+## ----eval=LOCAL---------------------------------------------------------------
 pobreza_oficial <- read_csv("https://raw.githubusercontent.com/holatam/data/master/eph/canasta/pobreza_oficial.csv")
 pobreza_oficial <- pobreza_oficial %>%
   mutate(periodo = parse_date_time(paste0(ANO4, "-", SEMESTRE * 2), "Y.q")) %>%
   select(periodo, pobreza_oficial = tasa_pobreza, indigencia_oficial = tasa_indigencia)
 pobreza_oficial
 
-## ---- eval=LOCAL--------------------------------------------------------------
+## ----eval=LOCAL---------------------------------------------------------------
 Pobreza_resumen <- bases_pobreza %>%
   group_by(ANO4, TRIMESTRE) %>%
   summarise(
@@ -56,7 +56,7 @@ Pobreza_resumen <- Pobreza_resumen %>%
   left_join(pobreza_oficial, by = "periodo") %>%
   pivot_longer(cols = pobreza_estimada:indigencia_oficial, names_to = c("tipo", "grupo"), values_to = "valor", names_sep = "_", values_drop_na = TRUE)
 
-## ---- fig.height=5, fig.width=7, eval=LOCAL-----------------------------------
+## ----fig.height=5, fig.width=7, eval=LOCAL------------------------------------
 Pobreza_resumen <- Pobreza_resumen %>%
   group_by(tipo, grupo) %>%
   mutate(
@@ -75,7 +75,7 @@ ggplot(Pobreza_resumen, aes(periodo, valor, color = grupo)) +
   theme_minimal() +
   theme(legend.position = "bottom")
 
-## ---- fig.height=5, fig.width=7, eval=LOCAL-----------------------------------
+## ----fig.height=5, fig.width=7, eval=LOCAL------------------------------------
 pobreza_calificacion <- bases_pobreza %>%
   filter(!is.na(situacion), !is.na(PP04D_COD)) %>%
   organize_cno(.) %>%
@@ -97,7 +97,7 @@ pobreza_calificacion %>%
   theme_minimal() +
   theme(legend.position = "bottom")
 
-## ---- fig.height=7, fig.width=7, eval=LOCAL-----------------------------------
+## ----fig.height=7, fig.width=7, eval=LOCAL------------------------------------
 pobreza_informalidad <- bases_pobreza %>%
   filter(!is.na(situacion), PP07H %in% 1:2) %>%
   group_by(ANO4, TRIMESTRE, PP07H) %>%
@@ -128,7 +128,7 @@ pobreza_informalidad %>%
     text = element_text(size = 14)
   )
 
-## ---- eval=LOCAL--------------------------------------------------------------
+## ----eval=LOCAL---------------------------------------------------------------
 relativos_cba <- canastas_regionales %>%
   select(-CBT, -codigo) %>%
   pivot_wider(names_from = region, values_from = CBA) %>%
@@ -139,7 +139,7 @@ relativos_cba <- canastas_regionales %>%
   ) # paso a formato fecha los trimestres
 relativos_cba
 
-## ---- fig.height=5, fig.width=7, eval=LOCAL-----------------------------------
+## ----fig.height=5, fig.width=7, eval=LOCAL------------------------------------
 ppcc <- data.frame(
   region = c("Cuyo", "GBA", "Noreste", "Noroeste", "Pampeana", "Patagonia"),
   ppcc = c(.872, 1, .886, .865, .904, .949)
@@ -158,7 +158,7 @@ relativos_cba %>%
   theme_minimal() +
   theme(legend.position = "bottom")
 
-## ---- eval=LOCAL--------------------------------------------------------------
+## ----eval=LOCAL---------------------------------------------------------------
 relativos_cbt <- canastas_regionales %>%
   select(-CBA, -codigo) %>%
   pivot_wider(names_from = region, values_from = CBT) %>%
@@ -169,7 +169,7 @@ relativos_cbt <- canastas_regionales %>%
   ) # paso a formato fecha los trimestres
 relativos_cbt
 
-## ---- fig.height=5, fig.width=7, eval=LOCAL-----------------------------------
+## ----fig.height=5, fig.width=7, eval=LOCAL------------------------------------
 relativos_cbt %>%
   pivot_longer(cols = Cuyo:Patagonia, names_to = "region", values_to = "relativo") %>%
   left_join(ppcc, by = c("region")) %>%
@@ -182,7 +182,7 @@ relativos_cbt %>%
   theme_minimal() +
   theme(legend.position = "bottom")
 
-## ---- eval=LOCAL--------------------------------------------------------------
+## ----eval=LOCAL---------------------------------------------------------------
 relativos_ice <- canastas_regionales %>%
   group_by(region, periodo) %>%
   mutate(ice = CBT / CBA) %>%
@@ -195,7 +195,7 @@ relativos_ice <- canastas_regionales %>%
   ) # paso a formato fecha los trimestres
 relativos_ice
 
-## ---- fig.height=5, fig.width=7, eval=LOCAL-----------------------------------
+## ----fig.height=5, fig.width=7, eval=LOCAL------------------------------------
 relativos_ice %>%
   pivot_longer(cols = Cuyo:Patagonia, names_to = "region", values_to = "relativo") %>%
   left_join(ppcc, by = c("region")) %>%

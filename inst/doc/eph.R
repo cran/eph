@@ -117,7 +117,7 @@ df
 lineas <- get_poverty_lines()
 lineas
 
-## ---- fig.width=7, fig.height=5-----------------------------------------------
+## ----fig.width=7, fig.height=5------------------------------------------------
 lineas %>%
   select(-ICE) %>%
   pivot_longer(cols = c("CBA", "CBT"), names_to = "canasta", values_to = "valor") %>%
