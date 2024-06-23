@@ -1,7 +1,7 @@
 Package: eph
 Title: Argentina's Permanent Household Survey Data and Manipulation
         Utilities
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
     person("Carolina", "Pradier", email = "carolinapradier@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0009-0007-5058-6352")),
     person("Diego", "Kozlowski", email = "diegokoz92@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0002-5396-3471")),
@@ -21,8 +21,8 @@ Description: Tools to download and manipulate the Permanent Household Survey fro
     the documentation was written in Spanish.
 BugReports: https://github.com/ropensci/eph/issues
 Imports: dplyr, expss, purrr, tibble, stringr, readxl, tidyr, utils,
-        attempt, zoo, leaflet, htmltools, rlang, stats, cli, httr,
-        curl, tidyselect
+        zoo, leaflet, htmltools, rlang, stats, cli, httr, curl,
+        tidyselect
 Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -34,7 +34,7 @@ Suggests: testthat, lubridate, knitr, rmarkdown, ggplot2, readr,
         forcats, httptest
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2024-06-19 16:13:21 UTC; carolinapradier
+Packaged: 2024-06-23 14:59:09 UTC; carolinapradier
 Author: Carolina Pradier [aut, cre] (<https://orcid.org/0009-0007-5058-6352>),
   Diego Kozlowski [aut] (<https://orcid.org/0000-0002-5396-3471>),
   Pablo Tiscornia [aut],
@@ -44,4 +44,4 @@ Author: Carolina Pradier [aut, cre] (<https://orcid.org/0009-0007-5058-6352>),
   Juan Gabriel Juara [ctb]
 Maintainer: Carolina Pradier <carolinapradier@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-06-19 16:30:02 UTC
+Date/Publication: 2024-06-23 15:50:05 UTC

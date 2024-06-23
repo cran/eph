@@ -1,7 +1,7 @@
-69da6808f2f13da295d4af379ad559d6 *DESCRIPTION
+88ff2cb8499c39288156322143f51d67 *DESCRIPTION
 edfc5a3db1d92b62e2b42139d6382aa9 *LICENSE
 57a2705d5bf5ff9357dcf049b48ba294 *NAMESPACE
-bfc7ea6ba0b459b2437ad5e1b3ef5e35 *NEWS.md
+b865685c13bd5976ba3ecd449ae4898f *NEWS.md
 58fb28acf15db5d3ace7db66abceed15 *R/CNO.R
 eb848ee16ac04e459b6039e754667749 *R/adulto_equivalente.R
 af0456de6f4f557c9ba67f581b148255 *R/caes.R
@@ -14,12 +14,12 @@ de832f11a4e39985c8f64094e65afa0a *R/diccionario_aglomerados.R
 8783fc42e6e4d445722dad128cf23f43 *R/diccionario_regiones.R
 268e8c3c77ce2b0564827877b532d756 *R/eph.R
 4b9f2a4e976c0b270652759a6c461488 *R/errores_muestrales.R
-b2ddb77934eb065a3835cff844bf824a *R/get_eahu.R
+2043fe7d3023b6af4e647ec67f6a4f77 *R/get_eahu.R
 1a93a58ec3d027cf867312401c492234 *R/get_eahu_internal.R
-b9090e865e9bf0b3505c9e0c4c49fe34 *R/get_microdata.R
+cec958b2eb0a4dc1b32219881e92d130 *R/get_microdata.R
 d2d8eeac02659ed5ba64e25805273370 *R/get_microdata_internal.R
-af66a9a45fc4a787d34fb536b5e3c90a *R/get_poverty_lines.R
-d452b901bd21882086ab1f39df1ef724 *R/get_total_urbano.R
+9eb33e6296d7f3547ff6fdd15dfb46e9 *R/get_poverty_lines.R
+62157e8c0c268ee9c9821b99d04bc5cd *R/get_total_urbano.R
 1a9b7a9896f6ce3b26cd27d24ae8e1bf *R/get_total_urbano_internal.R
 79630e91b70f1950dcba9aec2c44cd8e *R/is_in_github.R
 fe064364700aebf4c816bc6eef6d3780 *R/map_agglomerates.R
@@ -48,7 +48,7 @@ dd8ee9a6575bd422cff821130653cb2c *data/toybase_individual_2016_03.rda
 44ad49e065640d5d8c7991f63c322336 *inst/CITATION
 71fde2a107f09836ff7051df45ff5f56 *inst/doc/eph.R
 9331330b3bc47d468d2aa067f14506ed *inst/doc/eph.Rmd
-e7eba8c33cc31bb6987a6aee5c580cad *inst/doc/eph.html
+ea0862fa69d0e2fe22656517ba2acfe9 *inst/doc/eph.html
 332a0db1f5b462283fa24508e7125dec *inst/doc/estimacion_pobreza.R
 6459acdf118d08f210970d08a0774c17 *inst/doc/estimacion_pobreza.Rmd
 aa028de5c6178d584369ca78f53caef4 *inst/doc/estimacion_pobreza.html
@@ -84,7 +84,7 @@ cc777768cb7562f9d4181a10664232a6 *tests/testthat/test-calculate_poverty.R
 189bff530a4e44c9817f28f27c3b02c5 *tests/testthat/test-get_eahu.R
 259e5e34577dbaa9f1116c6a3af1e74e *tests/testthat/test-get_microdata.R
 0ed58594c16b3f938cf3b6f4177508a4 *tests/testthat/test-get_poverty_lines.R
-6532a33295eda740b33a68bd57ca510a *tests/testthat/test-get_total_urbano.R
+49d9e48527d7fe853157b6b3013cf907 *tests/testthat/test-get_total_urbano.R
 bf56e41dcf830282195b3ac71121e9e3 *tests/testthat/test-is_in_github.R
 1cf24ad871fd8d3a818597153c14259f *tests/testthat/test-map_agglomerates.R
 242deafa58515bd88ebabc855eb22130 *tests/testthat/test-organize_caes.R
